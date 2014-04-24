@@ -64,8 +64,8 @@ public:
            }
            else
            {
-           		result->next = right;
-           		right = right->next;
+               result->next = right;
+               right = right->next;
            }
            result = result->next;
        }
