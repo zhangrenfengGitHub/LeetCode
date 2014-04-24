@@ -97,26 +97,26 @@ int main()
     		node = (ListNode *)malloc(sizeof(ListNode));
     		node->val = num;
     		if( head == NULL)									//指定头结点
-			{
-				head = node;
-				tmp = head;
-			}
-			else
-			{
-				tmp->next = node;
-				tmp = node;
-			}
+		{
+			head = node;
+			tmp = head;
+		}
+		else
+		{
+			tmp->next = node;
+			tmp = node;
+		}
     		tmp->next = NULL;
     	}
 
        class Solution solution;
-	   result = solution.sortList(head);
-	   while( result)
-	   {
-	   		printf("%d ", result->val);
-	   		result = result->next;
-	   }
-	   printf("\n");
+       result = solution.sortList(head);
+       while( result)
+       {
+	   	printf("%d ", result->val);
+	   	result = result->next;
+       }
+       printf("\n");
     }
     return 0;
 }
