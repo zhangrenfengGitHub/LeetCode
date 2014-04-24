@@ -72,7 +72,7 @@ public:
        if( left)
             result->next = left;
         else
-        	result->next = right;
+            result->next = right;
 
         result = tmp->next;
         tmp->next = NULL;
@@ -90,7 +90,7 @@ int main()
     while( scanf("%d", &n) != EOF)
     {
     	head = NULL;
-    	while( n--)												//利用尾插法建立链表
+    	while( n--)											//利用尾插法建立链表
     	{
     		scanf("%d", &num);
 
