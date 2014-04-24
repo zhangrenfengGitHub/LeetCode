@@ -36,9 +36,9 @@ public:
             return head;
 
         ListNode *pre = NULL, *current = head, *last = head;
-        while( last && (last->next != NULL))             		//将链表分为两部分
+        while( last && (last->next != NULL))              	//将链表分为两部分
         {
-        	last = last->next->next;                            //每次前进两个节点，快速将链表分成两部分
+            last = last->next->next;                            //每次前进两个节点，快速将链表分成两部分
             pre = current;
             current = current->next;
         }
